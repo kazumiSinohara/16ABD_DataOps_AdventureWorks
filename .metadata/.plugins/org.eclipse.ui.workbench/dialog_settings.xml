@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="JobScriptsExportWizard">
+		<item key="JavaJobScriptsExportWizardPage.STORE_SHELL_LAUNCHER_ID" value="true"/>
+		<item key="JavaJobScriptsExportWizardPage.STORE_SYSTEM_ROUTINE_ID" value="true"/>
+		<item key="JavaJobScriptsExportWizardPage.STORE_USER_ROUTINE_ID" value="true"/>
+		<item key="JavaJobScriptsExportWizardPage.STORE_MODEL_ID" value="true"/>
+		<item key="JavaJobScriptsExportWizardPage.STORE_JOB_ID" value="true"/>
+		<item key="JavaJobScriptsExportWizardPage.STORE_DEPENDENCIES_ID" value="false"/>
+		<item key="JavaJobScriptsExportWizardPage.STORE_CONTEXT_ID" value="true"/>
+		<item key="JavaJobScriptsExportWizardPage.APPLY_TO_CHILDREN_ID" value="false"/>
+		<item key="JavaJobScriptsExportWizardPage.STORE_WEBXML_ID" value="true"/>
+		<item key="JavaJobScriptsExportWizardPage.STORE_CONFIGFILE_ID" value="true"/>
+		<item key="JavaJobScriptsExportWizardPage.STORE_AXISLIB_ID" value="true"/>
+		<item key="JavaJobScriptsExportWizardPage.STORE_WSDD_ID" value="true"/>
+		<item key="JavaJobScriptsExportWizardPage.STORE_WSDL_ID" value="true"/>
+		<item key="JavaJobScriptsExportWizardPage.STORE_SOURCE_ID" value="true"/>
+		<item key="JavaJobScriptsExportWizardPage.STORE_EXPORTTYPE_ID" value="POJO"/>
+		<item key="JavaJobScriptsExportWizardPage.EXTRACT_ZIP_FILE" value="false"/>
+		<list key="JavaJobScriptsExportWizardPage.STORE_DESTINATION_NAMES_ID">
+			<item value="/home/kazumi/Downloads/TOS_DI-20211109_1610-V8.0.1/data_science_team_0.1.zip"/>
+			<item value="/home/kazumi/Downloads/TOS_DI-20211109_1610-V8.0.1/reportRegionOnline_0.1.zip"/>
+			<item value="/home/kazumi/Downloads/TOS_DI-20211109_1610-V8.0.1/job1_0.1.zip"/>
+		</list>
+		<section name="destinationFile">
+			<item key="destinationFile" value="/home/kazumi/Downloads/TOS_DI-20211109_1610-V8.0.1/data_science_team_0.1.zip"/>
+		</section>
+	</section>
+</section>

@@ -1,0 +1,17 @@
+INDEX VERSION 1.131+/home/kazumi/Downloads/TOS_DI-20211109_1610-V8.0.1/workspace/.metadata/.plugins/org.eclipse.jdt.core
+3727666122.index
+2276527192.index
+2626918746.index
+3409831914.index
+2064532413.index
+4000054986.index
+1227848421.index
+992579424.index
+2711740896.index
+1730765682.index
+2793124622.index
+295283691.index
+898145839.index
+969032562.index
+2259488210.index
+2424538622.index
