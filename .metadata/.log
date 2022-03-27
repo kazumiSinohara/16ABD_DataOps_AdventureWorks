@@ -11238,3 +11238,237 @@ org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ecf.pr
 
 !ENTRY org.eclipse.core.resources 4 566 2022-03-19 18:53:50.569
 !MESSAGE Workspace was not properly initialized or has already shutdown.
+!SESSION 2022-03-27 15:21:37.251 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.13
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.compare.win32 4 0 2022-03-27 15:21:37.928
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.compare.win32 [4]
+  Unresolved requirement: Require-Capability: eclipse.platform; filter:="(osgi.os=win32)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1849)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1842)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1783)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1747)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1669)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jdt.launching.macosx 4 0 2022-03-27 15:21:37.930
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.launching.macosx [19]
+  Unresolved requirement: Require-Capability: eclipse.platform; filter:="(osgi.os=macosx)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1849)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1842)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1783)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1747)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1669)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jdt.launching.ui.macosx 4 0 2022-03-27 15:21:37.930
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.launching.ui.macosx [20]
+  Unresolved requirement: Require-Capability: eclipse.platform; filter:="(osgi.os=macosx)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1849)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1842)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1783)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1747)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1669)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.emf.ecore 2 0 2022-03-27 15:21:39.336
+!MESSAGE Both 'org.talend.model' and 'org.talend.model' register a package for 'http://www.talend.org/component_cache'
+
+!ENTRY org.eclipse.ecf.provider.filetransfer.httpclient45.win32 4 0 2022-03-27 15:21:39.352
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ecf.provider.filetransfer.httpclient45.win32 [162]
+  Unresolved requirement: Require-Capability: eclipse.platform; filter:="(osgi.os=win32)"
+  Unresolved requirement: Import-Package: org.apache.http.impl.auth.win; version="[4.5.0,5.0.0)"
+    -> Export-Package: org.apache.http.impl.auth.win; bundle-symbolic-name="org.apache.httpcomponents.httpclient.win"; bundle-version="4.5.13.v20210128-2225"; version="4.5.13"; x-internal:="true"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client,org.apache.http.impl.auth,org.apache.http.protocol,org.apache.http.util"
+       org.apache.httpcomponents.httpclient.win [92]
+         Unresolved requirement: Require-Capability: eclipse.platform; filter:="(osgi.os=win32)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1849)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1842)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1783)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1747)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1669)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.talend.platform.logging 1 0 2022-03-27 15:21:39.802
+!MESSAGE 2022-03-27 15:21:39,801 INFO  org.talend.utils.StudioKeysFileCheck  - encryptionKeyFilePath: /home/kazumi/Downloads/TOS_DI-20211109_1610-V8.0.1/configuration/studio.keys
+
+
+!ENTRY org.talend.platform.logging 1 0 2022-03-27 15:21:39.890
+!MESSAGE 2022-03-27 15:21:39,890 INFO  org.talend.rcp.intro.Application  - 
+!!------------------------------------------------------------------------!!
+!!                                                                        !!
+!!                                 TALEND                                 !!
+!!   Starting Talend's platform log system.VERSION= 8.0.1.20211109_1610   !!
+!!                                                                        !!
+!!------------------------------------------------------------------------!!
+
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-03-27 15:21:40.023
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.talend.platform.logging 1 0 2022-03-27 15:21:53.126
+!MESSAGE 2022-03-27 15:21:53,125 INFO  org.talend.updates.runtime.maven.M2repoBaseInstaller  - GAV [groupId=org.talend.studio, artifactId=repo-tck, version=8.0.1.20211103_1602, classifier=null, type=pom, componentType=0] was already installed
+
+
+!ENTRY org.talend.platform.logging 1 0 2022-03-27 15:21:53.127
+!MESSAGE 2022-03-27 15:21:53,127 INFO  org.talend.updates.runtime.maven.M2repoBaseInstaller  - GAV [groupId=org.talend.studio, artifactId=repo-tcksdk, version=8.0.1.20211103_1602, classifier=null, type=pom, componentType=0] was already installed
+
+
+!ENTRY org.talend.platform.logging 1 0 2022-03-27 15:21:53.127
+!MESSAGE 2022-03-27 15:21:53,127 INFO  org.talend.updates.runtime.maven.M2repoBaseInstaller  - GAV [groupId=org.talend.studio, artifactId=repo-tcompv0, version=8.0.1.20211103_1602, classifier=null, type=pom, componentType=0] was already installed
+
+
+!ENTRY org.talend.platform.logging 1 0 2022-03-27 15:21:53.224
+!MESSAGE 2022-03-27 15:21:53,223 INFO  org.talend.sdk.component.studio.ProcessManager  - Local addresses passed to sdk: [127.0.0.1, [0:0:0:0:0:0:0:1]]
+
+
+!ENTRY org.talend.platform.logging 1 0 2022-03-27 15:21:54.473
+!MESSAGE 2022-03-27 15:21:54,473 INFO  org.talend.core.repository.model.ProxyRepositoryFactory  - user@talend.com logged on Local_Project
+
+
+!ENTRY org.talend.platform.logging 2 0 2022-03-27 15:21:54.633
+!MESSAGE 2022-03-27 15:21:54,632 WARN  org.talend.sdk.component.studio.logging.JULToOsgiHandler  - [org.talend.sdk.component.server.service.ComponentManagerService.init] No system property 'jdk.serialFilter', ensure it is intended
+
+
+!ENTRY org.talend.platform.logging 1 0 2022-03-27 15:21:55.246
+!MESSAGE 2022-03-27 15:21:55,246 INFO  org.talend.core.repository.logintask.ReadOnlyProjectConfirm  - ReadOnly confirm
+
+
+!ENTRY org.talend.platform.logging 1 0 2022-03-27 15:21:55.429
+!MESSAGE 2022-03-27 15:21:55,428 INFO  org.talend.designer.codegen.components.model.ComponentsLoader  - allSet size: 573, total: 573
+
+
+!ENTRY org.talend.platform.logging 1 0 2022-03-27 15:21:55.562
+!MESSAGE 2022-03-27 15:21:55,562 INFO  org.talend.sdk.component.studio.ProcessManager  - Succeed to connect [http://127.0.0.1:43557/api/v1/environment]
+
+
+!ENTRY org.talend.platform.logging 1 0 2022-03-27 15:21:56.115
+!MESSAGE 2022-03-27 15:21:56,114 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_ROUTINES/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2022-03-27 15:21:56.115
+!MESSAGE 2022-03-27 15:21:56,115 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Resources folder /LOCAL_PROJECT_ROUTINES/src/main/java overlaps with sources folder /LOCAL_PROJECT_ROUTINES/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2022-03-27 15:21:56.121
+!MESSAGE 2022-03-27 15:21:56,120 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_ROUTINES/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2022-03-27 15:21:56.121
+!MESSAGE 2022-03-27 15:21:56,121 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_ROUTINES/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2022-03-27 15:21:56.751
+!MESSAGE 2022-03-27 15:21:56,751 INFO  org.talend.designer.codegen.components.model.ComponentsFactory  - 640 components loaded in 1467 ms
+
+
+!ENTRY org.talend.platform.logging 2 0 2022-03-27 15:21:58.392
+!MESSAGE 2022-03-27 15:21:58,392 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: TEZ-SERVER-LIB-HDP220
+
+
+!ENTRY org.talend.platform.logging 2 0 2022-03-27 15:21:58.393
+!MESSAGE 2022-03-27 15:21:58,393 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: TEZ-SERVER-LIB-HDP_2_3
+
+
+!ENTRY org.talend.platform.logging 2 0 2022-03-27 15:21:58.446
+!MESSAGE 2022-03-27 15:21:58,446 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: TEZ-SERVER-LIB-HDP220
+
+
+!ENTRY org.talend.platform.logging 2 0 2022-03-27 15:21:58.446
+!MESSAGE 2022-03-27 15:21:58,446 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: TEZ-SERVER-LIB-HDP_2_3
+
+
+!ENTRY org.talend.platform.logging 1 0 2022-03-27 15:21:59.102
+!MESSAGE 2022-03-27 15:21:59,102 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/LOCAL_PROJECT_ROUTINES: org.example.local_project.code:routines:8.0.1 with classifier  to /LOCAL_PROJECT_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2022-03-27 15:21:59.193
+!MESSAGE 2022-03-27 15:21:59,193 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_BEANS/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2022-03-27 15:21:59.193
+!MESSAGE 2022-03-27 15:21:59,193 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Resources folder /LOCAL_PROJECT_BEANS/src/main/java overlaps with sources folder /LOCAL_PROJECT_BEANS/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2022-03-27 15:21:59.195
+!MESSAGE 2022-03-27 15:21:59,195 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_BEANS/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2022-03-27 15:21:59.195
+!MESSAGE 2022-03-27 15:21:59,195 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_BEANS/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2022-03-27 15:21:59.898
+!MESSAGE 2022-03-27 15:21:59,897 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/LOCAL_PROJECT_ROUTINES: org.example.local_project.code:routines:8.0.1 with classifier  to /LOCAL_PROJECT_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2022-03-27 15:22:42.170
+!MESSAGE 2022-03-27 15:22:42,169 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/LOCAL_PROJECT_ROUTINES: org.example.local_project.code:routines:8.0.1 with classifier  to /LOCAL_PROJECT_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2022-03-27 15:22:42.271
+!MESSAGE 2022-03-27 15:22:42,271 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_REPORTREGIONONLINE_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2022-03-27 15:22:42.272
+!MESSAGE 2022-03-27 15:22:42,271 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_REPORTREGIONONLINE_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2022-03-27 15:22:42.273
+!MESSAGE 2022-03-27 15:22:42,272 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_REPORTREGIONONLINE_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2022-03-27 15:22:42.273
+!MESSAGE 2022-03-27 15:22:42,273 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_REPORTREGIONONLINE_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2022-03-27 15:25:30.365
+!MESSAGE 2022-03-27 15:25:30,364 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/LOCAL_PROJECT_ROUTINES: org.example.local_project.code:routines:8.0.1 with classifier  to /LOCAL_PROJECT_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2022-03-27 15:25:30.466
+!MESSAGE 2022-03-27 15:25:30,466 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_DATA_SCIENCE_TEAM_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2022-03-27 15:25:30.467
+!MESSAGE 2022-03-27 15:25:30,466 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_DATA_SCIENCE_TEAM_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2022-03-27 15:25:30.468
+!MESSAGE 2022-03-27 15:25:30,467 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_DATA_SCIENCE_TEAM_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2022-03-27 15:25:30.468
+!MESSAGE 2022-03-27 15:25:30,468 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_DATA_SCIENCE_TEAM_0.1/src/test/resources
+
