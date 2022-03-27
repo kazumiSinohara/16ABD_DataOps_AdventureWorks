@@ -1,0 +1,948 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" name="Default"/>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:V3jH69jVPXs1bBHPQYJDRjSeCo+BeELlYSs6pLu0" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;/home/kazumi/Downloads/TOS_DI-20211109_1610-V8.0.1/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_12" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:pJUF4oQ63a13Pye+/iDZxaWie3krfphZYtQ190gL" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_mrRGcIrMEeyVSJf28aYuZA" name="DataOperation"/>
+    <routinesParameter id="_mrJxsIrMEeyVSJf28aYuZA" name="Mathematical"/>
+    <routinesParameter id="_mrNcEIrMEeyVSJf28aYuZA" name="Numeric"/>
+    <routinesParameter id="_mrVX4IrMEeyVSJf28aYuZA" name="Relational"/>
+    <routinesParameter id="_mrXNEIrMEeyVSJf28aYuZA" name="StringHandling"/>
+    <routinesParameter id="_mrLm4IrMEeyVSJf28aYuZA" name="TalendDataGenerator"/>
+    <routinesParameter id="_mq0agIrMEeyVSJf28aYuZA" name="TalendDate"/>
+    <routinesParameter id="_mrS7oIrMEeyVSJf28aYuZA" name="TalendStringUtil"/>
+    <routinesParameter id="_mrPRQIrMEeyVSJf28aYuZA" name="TalendString"/>
+  </parameters>
+  <node componentName="tMysqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="__QV24IwNEeynAfQwvQe0Kw" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MARIADB"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;relational.fit.cvut.cz&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;AdventureWorks2014&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;guest&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Mx35B4IX93ChEu1U1rN3S7ciVmtsnBqJGuN1zF8mEkqopX68quuGTQ=="/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="AdventureWorksMaria"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="256" sizeX="64" sizeY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="__QV24IwNEeynAfQwvQe0Kw" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MARIADB" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;relational.fit.cvut.cz&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;AdventureWorks2014&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;guest&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:50JQRV17aek0Fl0vkrfRrmZBXmIV3Is7qxaZilSJ/Jd+ic9PlOsd9g==" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;SalesOrderHeader&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xA;  `SalesOrderHeader`.`SalesOrderID`, &#xA;  `SalesOrderHeader`.`RevisionNumber`, &#xA;  `SalesOrderHeader`.`OrderDate`, &#xA;  `SalesOrderHeader`.`DueDate`, &#xA;  `SalesOrderHeader`.`ShipDate`, &#xA;  `SalesOrderHeader`.`Status`, &#xA;  `SalesOrderHeader`.`OnlineOrderFlag`, &#xA;  `SalesOrderHeader`.`SalesOrderNumber`, &#xA;  `SalesOrderHeader`.`PurchaseOrderNumber`, &#xA;  `SalesOrderHeader`.`AccountNumber`, &#xA;  `SalesOrderHeader`.`CustomerID`, &#xA;  `SalesOrderHeader`.`SalesPersonID`, &#xA;  `SalesOrderHeader`.`TerritoryID`, &#xA;  `SalesOrderHeader`.`BillToAddressID`, &#xA;  `SalesOrderHeader`.`ShipToAddressID`, &#xA;  `SalesOrderHeader`.`ShipMethodID`, &#xA;  `SalesOrderHeader`.`CreditCardID`, &#xA;  `SalesOrderHeader`.`CreditCardApprovalCode`, &#xA;  `SalesOrderHeader`.`CurrencyRateID`, &#xA;  `SalesOrderHeader`.`SubTotal`, &#xA;  `SalesOrderHeader`.`TaxAmt`, &#xA;  `SalesOrderHeader`.`Freight`, &#xA;  `SalesOrderHeader`.`TotalDue`, &#xA;  `SalesOrderHeader`.`Comment`, &#xA;  `SalesOrderHeader`.`rowguid`, &#xA;  `SalesOrderHeader`.`ModifiedDate`&#xA;FROM `SalesOrderHeader`&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ENABLE_STREAM" value="false" show="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="SalesOrderID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RevisionNumber"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OrderDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DueDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShipDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Status"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OnlineOrderFlag"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SalesOrderNumber"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderNumber"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AccountNumber"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CustomerID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SalesPersonID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TerritoryID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BillToAddressID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShipToAddressID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShipMethodID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CreditCardID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CreditCardApprovalCode"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CurrencyRateID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SubTotal"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TaxAmt"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Freight"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TotalDue"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Comment"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="rowguid"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ModifiedDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="AdventureWorksMaria"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="SalesOrderHeader" name="tDBInput_1">
+      <column comment="Primary key." key="true" length="10" name="SalesOrderID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value="Primary key."/>
+      </column>
+      <column comment="Incremental number to track changes to the sales order over time." defaultValue="0" key="false" length="3" name="RevisionNumber" nullable="false" pattern="" precision="0" sourceType="TINYINT UNSIGNED" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value="Incremental number to track changes to the sales order over time."/>
+      </column>
+      <column comment="Dates the sales order was created." defaultValue="'current_timestamp()'" key="false" length="19" name="OrderDate" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value="Dates the sales order was created."/>
+      </column>
+      <column comment="Date the order is due to the customer." key="false" length="19" name="DueDate" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value="Date the order is due to the customer."/>
+      </column>
+      <column comment="Date the order was shipped to the customer." key="false" length="19" name="ShipDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value="Date the order was shipped to the customer."/>
+      </column>
+      <column comment="Order current status. 1 = In process; 2 = Approved; 3 = Backordered; 4 = Rejected; 5 = Shipped; 6 = Cancelled" defaultValue="1" key="false" length="3" name="Status" nullable="false" pattern="" precision="0" sourceType="TINYINT UNSIGNED" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value="Order current status. 1 = In process; 2 = Approved; 3 = Backordered; 4 = Rejected; 5 = Shipped; 6 = Cancelled"/>
+      </column>
+      <column comment="0 = Order placed by sales person. 1 = Order placed online by customer." defaultValue="'1'" key="false" length="3" name="OnlineOrderFlag" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value="0 = Order placed by sales person. 1 = Order placed online by customer."/>
+      </column>
+      <column comment="Unique sales order identification number." key="false" length="25" name="SalesOrderNumber" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Unique sales order identification number."/>
+      </column>
+      <column comment="Customer purchase order number reference. " key="false" length="50" name="PurchaseOrderNumber" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Customer purchase order number reference. "/>
+      </column>
+      <column comment="Financial accounting number reference." key="false" length="30" name="AccountNumber" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Financial accounting number reference."/>
+      </column>
+      <column comment="Customer identification number. Foreign key to Customer.BusinessEntityID." key="false" length="10" name="CustomerID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value="Customer identification number. Foreign key to Customer.BusinessEntityID."/>
+      </column>
+      <column comment="Sales person who created the sales order. Foreign key to SalesPerson.BusinessEntityID." defaultValue="" key="false" length="10" name="SalesPersonID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value="Sales person who created the sales order. Foreign key to SalesPerson.BusinessEntityID."/>
+      </column>
+      <column comment="Territory in which the sale was made. Foreign key to SalesTerritory.SalesTerritoryID." defaultValue="" key="false" length="10" name="TerritoryID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value="Territory in which the sale was made. Foreign key to SalesTerritory.SalesTerritoryID."/>
+      </column>
+      <column comment="Customer billing address. Foreign key to Address.AddressID." key="false" length="10" name="BillToAddressID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value="Customer billing address. Foreign key to Address.AddressID."/>
+      </column>
+      <column comment="Customer shipping address. Foreign key to Address.AddressID." key="false" length="10" name="ShipToAddressID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value="Customer shipping address. Foreign key to Address.AddressID."/>
+      </column>
+      <column comment="Shipping method. Foreign key to ShipMethod.ShipMethodID." key="false" length="10" name="ShipMethodID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value="Shipping method. Foreign key to ShipMethod.ShipMethodID."/>
+      </column>
+      <column comment="Credit card identification number. Foreign key to CreditCard.CreditCardID." defaultValue="" key="false" length="10" name="CreditCardID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value="Credit card identification number. Foreign key to CreditCard.CreditCardID."/>
+      </column>
+      <column comment="Approval code provided by the credit card company." key="false" length="15" name="CreditCardApprovalCode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Approval code provided by the credit card company."/>
+      </column>
+      <column comment="Currency exchange rate used. Foreign key to CurrencyRate.CurrencyRateID." defaultValue="" key="false" length="10" name="CurrencyRateID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value="Currency exchange rate used. Foreign key to CurrencyRate.CurrencyRateID."/>
+      </column>
+      <column comment="Sales subtotal. Computed as SUM(SalesOrderDetail.LineTotal)for the appropriate SalesOrderID." defaultValue="0.0000" key="false" length="19" name="SubTotal" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="Sales subtotal. Computed as SUM(SalesOrderDetail.LineTotal)for the appropriate SalesOrderID."/>
+      </column>
+      <column comment="Tax amount." defaultValue="0.0000" key="false" length="19" name="TaxAmt" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="Tax amount."/>
+      </column>
+      <column comment="Shipping cost." defaultValue="0.0000" key="false" length="19" name="Freight" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="Shipping cost."/>
+      </column>
+      <column comment="Total due from customer. Computed as Subtotal + TaxAmt + Freight." key="false" length="19" name="TotalDue" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="Total due from customer. Computed as Subtotal + TaxAmt + Freight."/>
+      </column>
+      <column comment="Sales representative comments." key="false" length="128" name="Comment" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Sales representative comments."/>
+      </column>
+      <column comment="ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample." key="false" length="64" name="rowguid" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample."/>
+      </column>
+      <column comment="Date and time the record was last updated." defaultValue="'current_timestamp()'" key="false" length="19" name="ModifiedDate" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value="Date and time the record was last updated."/>
+      </column>
+      <additionalProperties key="Comment" value="General sales order information."/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1" show="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;./SalesOrderHeader.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="SalesOrderHeader" name="tFileOutputDelimited_1">
+      <column comment="Primary key." key="true" length="10" name="SalesOrderID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value="Primary key."/>
+      </column>
+      <column comment="Incremental number to track changes to the sales order over time." defaultValue="0" key="false" length="3" name="RevisionNumber" nullable="false" pattern="" precision="0" sourceType="TINYINT UNSIGNED" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value="Incremental number to track changes to the sales order over time."/>
+      </column>
+      <column comment="Dates the sales order was created." defaultValue="'current_timestamp()'" key="false" length="19" name="OrderDate" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value="Dates the sales order was created."/>
+      </column>
+      <column comment="Date the order is due to the customer." key="false" length="19" name="DueDate" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value="Date the order is due to the customer."/>
+      </column>
+      <column comment="Date the order was shipped to the customer." defaultValue="" key="false" length="19" name="ShipDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value="Date the order was shipped to the customer."/>
+      </column>
+      <column comment="Order current status. 1 = In process; 2 = Approved; 3 = Backordered; 4 = Rejected; 5 = Shipped; 6 = Cancelled" defaultValue="1" key="false" length="3" name="Status" nullable="false" pattern="" precision="0" sourceType="TINYINT UNSIGNED" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value="Order current status. 1 = In process; 2 = Approved; 3 = Backordered; 4 = Rejected; 5 = Shipped; 6 = Cancelled"/>
+      </column>
+      <column comment="0 = Order placed by sales person. 1 = Order placed online by customer." defaultValue="'1'" key="false" length="3" name="OnlineOrderFlag" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value="0 = Order placed by sales person. 1 = Order placed online by customer."/>
+      </column>
+      <column comment="Unique sales order identification number." key="false" length="25" name="SalesOrderNumber" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Unique sales order identification number."/>
+      </column>
+      <column comment="Customer purchase order number reference. " defaultValue="" key="false" length="50" name="PurchaseOrderNumber" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Customer purchase order number reference. "/>
+      </column>
+      <column comment="Financial accounting number reference." defaultValue="" key="false" length="30" name="AccountNumber" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Financial accounting number reference."/>
+      </column>
+      <column comment="Customer identification number. Foreign key to Customer.BusinessEntityID." key="false" length="10" name="CustomerID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value="Customer identification number. Foreign key to Customer.BusinessEntityID."/>
+      </column>
+      <column comment="Sales person who created the sales order. Foreign key to SalesPerson.BusinessEntityID." defaultValue="" key="false" length="10" name="SalesPersonID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value="Sales person who created the sales order. Foreign key to SalesPerson.BusinessEntityID."/>
+      </column>
+      <column comment="Territory in which the sale was made. Foreign key to SalesTerritory.SalesTerritoryID." defaultValue="" key="false" length="10" name="TerritoryID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value="Territory in which the sale was made. Foreign key to SalesTerritory.SalesTerritoryID."/>
+      </column>
+      <column comment="Customer billing address. Foreign key to Address.AddressID." key="false" length="10" name="BillToAddressID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value="Customer billing address. Foreign key to Address.AddressID."/>
+      </column>
+      <column comment="Customer shipping address. Foreign key to Address.AddressID." key="false" length="10" name="ShipToAddressID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value="Customer shipping address. Foreign key to Address.AddressID."/>
+      </column>
+      <column comment="Shipping method. Foreign key to ShipMethod.ShipMethodID." key="false" length="10" name="ShipMethodID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value="Shipping method. Foreign key to ShipMethod.ShipMethodID."/>
+      </column>
+      <column comment="Credit card identification number. Foreign key to CreditCard.CreditCardID." defaultValue="" key="false" length="10" name="CreditCardID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value="Credit card identification number. Foreign key to CreditCard.CreditCardID."/>
+      </column>
+      <column comment="Approval code provided by the credit card company." defaultValue="" key="false" length="15" name="CreditCardApprovalCode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Approval code provided by the credit card company."/>
+      </column>
+      <column comment="Currency exchange rate used. Foreign key to CurrencyRate.CurrencyRateID." defaultValue="" key="false" length="10" name="CurrencyRateID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value="Currency exchange rate used. Foreign key to CurrencyRate.CurrencyRateID."/>
+      </column>
+      <column comment="Sales subtotal. Computed as SUM(SalesOrderDetail.LineTotal)for the appropriate SalesOrderID." defaultValue="0.0000" key="false" length="19" name="SubTotal" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="Sales subtotal. Computed as SUM(SalesOrderDetail.LineTotal)for the appropriate SalesOrderID."/>
+      </column>
+      <column comment="Tax amount." defaultValue="0.0000" key="false" length="19" name="TaxAmt" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="Tax amount."/>
+      </column>
+      <column comment="Shipping cost." defaultValue="0.0000" key="false" length="19" name="Freight" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="Shipping cost."/>
+      </column>
+      <column comment="Total due from customer. Computed as Subtotal + TaxAmt + Freight." key="false" length="19" name="TotalDue" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="Total due from customer. Computed as Subtotal + TaxAmt + Freight."/>
+      </column>
+      <column comment="Sales representative comments." defaultValue="" key="false" length="128" name="Comment" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Sales representative comments."/>
+      </column>
+      <column comment="ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample." key="false" length="64" name="rowguid" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample."/>
+      </column>
+      <column comment="Date and time the record was last updated." defaultValue="'current_timestamp()'" key="false" length="19" name="ModifiedDate" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value="Date and time the record was last updated."/>
+      </column>
+      <additionalProperties key="Comment" value="General sales order information."/>
+    </metadata>
+  </node>
+  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="384" sizeX="64" sizeY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_3" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="__QV24IwNEeynAfQwvQe0Kw" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MARIADB" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;relational.fit.cvut.cz&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;AdventureWorks2014&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;guest&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:DESql8fWJwV+KGU0F+BiDliGH1RYJ8tNxhHTFpDh6nFKqCUh1E9U+g==" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="__QV24IwNEeynAfQwvQe0Kw - SalesOrderHeaderSalesReason" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;SalesOrderHeaderSalesReason&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xA;  `SalesOrderHeaderSalesReason`.`SalesOrderID`, &#xA;  `SalesOrderHeaderSalesReason`.`SalesReasonID`, &#xA;  `SalesOrderHeaderSalesReason`.`ModifiedDate`&#xA;FROM `SalesOrderHeaderSalesReason`&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ENABLE_STREAM" value="false" show="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="SalesOrderID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SalesReasonID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ModifiedDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="AdventureWorksMaria"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="SalesOrderHeaderSalesReason" name="tDBInput_3">
+      <column comment="Primary key. Foreign key to SalesOrderHeader.SalesOrderID." key="true" length="10" name="SalesOrderID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value="Primary key. Foreign key to SalesOrderHeader.SalesOrderID."/>
+      </column>
+      <column comment="Primary key. Foreign key to SalesReason.SalesReasonID." key="true" length="10" name="SalesReasonID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value="Primary key. Foreign key to SalesReason.SalesReasonID."/>
+      </column>
+      <column comment="Date and time the record was last updated." defaultValue="'current_timestamp()'" key="false" length="19" name="ModifiedDate" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value="Date and time the record was last updated."/>
+      </column>
+      <additionalProperties key="Comment" value="Cross-reference table mapping sales orders to sales reason codes."/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_3" show="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;./SalesOrderHeaderSalesReason.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="SalesOrderHeaderSalesReason" name="tFileOutputDelimited_3">
+      <column comment="Primary key. Foreign key to SalesOrderHeader.SalesOrderID." key="true" length="10" name="SalesOrderID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value="Primary key. Foreign key to SalesOrderHeader.SalesOrderID."/>
+      </column>
+      <column comment="Primary key. Foreign key to SalesReason.SalesReasonID." key="true" length="10" name="SalesReasonID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value="Primary key. Foreign key to SalesReason.SalesReasonID."/>
+      </column>
+      <column comment="Date and time the record was last updated." defaultValue="'current_timestamp()'" key="false" length="19" name="ModifiedDate" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value="Date and time the record was last updated."/>
+      </column>
+      <additionalProperties key="Comment" value="Cross-reference table mapping sales orders to sales reason codes."/>
+    </metadata>
+  </node>
+  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="512" sizeX="64" sizeY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="__QV24IwNEeynAfQwvQe0Kw" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MARIADB" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;relational.fit.cvut.cz&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;AdventureWorks2014&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;guest&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:lEjiqOdPSXVnQqkm/fsFJdTX0qQh+XnQFeNs8bMEfr6W+uczLrVFKQ==" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="__QV24IwNEeynAfQwvQe0Kw - Customer" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;Customer&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xA;  `Customer`.`CustomerID`, &#xA;  `Customer`.`PersonID`, &#xA;  `Customer`.`StoreID`, &#xA;  `Customer`.`TerritoryID`, &#xA;  `Customer`.`AccountNumber`, &#xA;  `Customer`.`rowguid`, &#xA;  `Customer`.`ModifiedDate`&#xA;FROM `Customer`&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ENABLE_STREAM" value="false" show="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="CustomerID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PersonID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="StoreID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TerritoryID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AccountNumber"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="rowguid"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ModifiedDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="AdventureWorksMaria"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Customer" name="tDBInput_2">
+      <column comment="Primary key." key="true" length="10" name="CustomerID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value="Primary key."/>
+      </column>
+      <column comment="Foreign key to Person.BusinessEntityID" defaultValue="" key="false" length="10" name="PersonID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value="Foreign key to Person.BusinessEntityID"/>
+      </column>
+      <column comment="Foreign key to Store.BusinessEntityID" defaultValue="" key="false" length="10" name="StoreID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value="Foreign key to Store.BusinessEntityID"/>
+      </column>
+      <column comment="ID of the territory in which the customer is located. Foreign key to SalesTerritory.SalesTerritoryID." defaultValue="" key="false" length="10" name="TerritoryID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value="ID of the territory in which the customer is located. Foreign key to SalesTerritory.SalesTerritoryID."/>
+      </column>
+      <column comment="Unique number identifying the customer assigned by the accounting system." key="false" length="10" name="AccountNumber" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Unique number identifying the customer assigned by the accounting system."/>
+      </column>
+      <column comment="ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample." key="false" length="64" name="rowguid" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample."/>
+      </column>
+      <column comment="Date and time the record was last updated." defaultValue="'current_timestamp()'" key="false" length="19" name="ModifiedDate" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value="Date and time the record was last updated."/>
+      </column>
+      <additionalProperties key="Comment" value="Current customer information. Also see the Person and Store tables."/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_2" show="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;./Customer.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Customer" name="tFileOutputDelimited_2">
+      <column comment="Primary key." key="true" length="10" name="CustomerID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value="Primary key."/>
+      </column>
+      <column comment="Foreign key to Person.BusinessEntityID" defaultValue="" key="false" length="10" name="PersonID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value="Foreign key to Person.BusinessEntityID"/>
+      </column>
+      <column comment="Foreign key to Store.BusinessEntityID" defaultValue="" key="false" length="10" name="StoreID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value="Foreign key to Store.BusinessEntityID"/>
+      </column>
+      <column comment="ID of the territory in which the customer is located. Foreign key to SalesTerritory.SalesTerritoryID." defaultValue="" key="false" length="10" name="TerritoryID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value="ID of the territory in which the customer is located. Foreign key to SalesTerritory.SalesTerritoryID."/>
+      </column>
+      <column comment="Unique number identifying the customer assigned by the accounting system." key="false" length="10" name="AccountNumber" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Unique number identifying the customer assigned by the accounting system."/>
+      </column>
+      <column comment="ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample." key="false" length="64" name="rowguid" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample."/>
+      </column>
+      <column comment="Date and time the record was last updated." defaultValue="'current_timestamp()'" key="false" length="19" name="ModifiedDate" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value="Date and time the record was last updated."/>
+      </column>
+      <additionalProperties key="Comment" value="Current customer information. Also see the Person and Store tables."/>
+    </metadata>
+  </node>
+  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="640" sizeX="64" sizeY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_4" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="__QV24IwNEeynAfQwvQe0Kw" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MARIADB" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;relational.fit.cvut.cz&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;AdventureWorks2014&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;guest&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:6G6Jdz53On12Yfy8M4GWGtsbqnPKotUFkGD0yGMbI54wCJdIF4Zh9g==" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="__QV24IwNEeynAfQwvQe0Kw - Product" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;Product&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xA;  `Product`.`ProductID`, &#xA;  `Product`.`Name`, &#xA;  `Product`.`ProductNumber`, &#xA;  `Product`.`MakeFlag`, &#xA;  `Product`.`FinishedGoodsFlag`, &#xA;  `Product`.`Color`, &#xA;  `Product`.`SafetyStockLevel`, &#xA;  `Product`.`ReorderPoint`, &#xA;  `Product`.`StandardCost`, &#xA;  `Product`.`ListPrice`, &#xA;  `Product`.`Size`, &#xA;  `Product`.`SizeUnitMeasureCode`, &#xA;  `Product`.`WeightUnitMeasureCode`, &#xA;  `Product`.`Weight`, &#xA;  `Product`.`DaysToManufacture`, &#xA;  `Product`.`ProductLine`, &#xA;  `Product`.`Class`, &#xA;  `Product`.`Style`, &#xA;  `Product`.`ProductSubcategoryID`, &#xA;  `Product`.`ProductModelID`, &#xA;  `Product`.`SellStartDate`, &#xA;  `Product`.`SellEndDate`, &#xA;  `Product`.`DiscontinuedDate`, &#xA;  `Product`.`rowguid`, &#xA;  `Product`.`ModifiedDate`&#xA;FROM `Product`&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ENABLE_STREAM" value="false" show="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProductID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProductNumber"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MakeFlag"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FinishedGoodsFlag"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Color"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SafetyStockLevel"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ReorderPoint"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="StandardCost"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ListPrice"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Size"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SizeUnitMeasureCode"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WeightUnitMeasureCode"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Weight"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DaysToManufacture"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProductLine"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_Class"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Style"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProductSubcategoryID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProductModelID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SellStartDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SellEndDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DiscontinuedDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="rowguid"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ModifiedDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="AdventureWorksMaria"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Product" name="tDBInput_4">
+      <column comment="Primary key for Product records." key="true" length="10" name="ProductID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value="Primary key for Product records."/>
+      </column>
+      <column comment="Name of the product." key="false" length="100" name="Name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Name of the product."/>
+      </column>
+      <column comment="Unique product identification number." key="false" length="25" name="ProductNumber" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Unique product identification number."/>
+      </column>
+      <column comment="0 = Product is purchased, 1 = Product is manufactured in-house." defaultValue="'1'" key="false" length="3" name="MakeFlag" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value="0 = Product is purchased, 1 = Product is manufactured in-house."/>
+      </column>
+      <column comment="0 = Product is not a salable item. 1 = Product is salable." defaultValue="'1'" key="false" length="3" name="FinishedGoodsFlag" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value="0 = Product is not a salable item. 1 = Product is salable."/>
+      </column>
+      <column comment="Product color." defaultValue="" key="false" length="15" name="Color" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Product color."/>
+      </column>
+      <column comment="Minimum inventory quantity. " key="false" length="5" name="SafetyStockLevel" nullable="false" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value="Minimum inventory quantity. "/>
+      </column>
+      <column comment="Inventory level that triggers a purchase order or work order. " key="false" length="5" name="ReorderPoint" nullable="false" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value="Inventory level that triggers a purchase order or work order. "/>
+      </column>
+      <column comment="Standard cost of the product." key="false" length="19" name="StandardCost" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="Standard cost of the product."/>
+      </column>
+      <column comment="Selling price." key="false" length="19" name="ListPrice" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="Selling price."/>
+      </column>
+      <column comment="Product size." defaultValue="" key="false" length="5" name="Size" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Product size."/>
+      </column>
+      <column comment="Unit of measure for Size column." defaultValue="" key="false" length="3" name="SizeUnitMeasureCode" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Unit of measure for Size column."/>
+      </column>
+      <column comment="Unit of measure for Weight column." defaultValue="" key="false" length="3" name="WeightUnitMeasureCode" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Unit of measure for Weight column."/>
+      </column>
+      <column comment="Product weight." defaultValue="" key="false" length="8" name="Weight" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="Product weight."/>
+      </column>
+      <column comment="Number of days required to manufacture the product." key="false" length="10" name="DaysToManufacture" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value="Number of days required to manufacture the product."/>
+      </column>
+      <column comment="R = Road, M = Mountain, T = Touring, S = Standard" defaultValue="" key="false" length="2" name="ProductLine" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="R = Road, M = Mountain, T = Touring, S = Standard"/>
+      </column>
+      <column comment="H = High, M = Medium, L = Low" defaultValue="" key="false" length="2" name="_Class" nullable="true" originalDbColumnName="Class" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="H = High, M = Medium, L = Low"/>
+      </column>
+      <column comment="W = Womens, M = Mens, U = Universal" defaultValue="" key="false" length="2" name="Style" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="W = Womens, M = Mens, U = Universal"/>
+      </column>
+      <column comment="Product is a member of this product subcategory. Foreign key to ProductSubCategory.ProductSubCategoryID. " defaultValue="" key="false" length="10" name="ProductSubcategoryID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value="Product is a member of this product subcategory. Foreign key to ProductSubCategory.ProductSubCategoryID. "/>
+      </column>
+      <column comment="Product is a member of this product model. Foreign key to ProductModel.ProductModelID." defaultValue="" key="false" length="10" name="ProductModelID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value="Product is a member of this product model. Foreign key to ProductModel.ProductModelID."/>
+      </column>
+      <column comment="Date the product was available for sale." key="false" length="19" name="SellStartDate" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value="Date the product was available for sale."/>
+      </column>
+      <column comment="Date the product was no longer available for sale." defaultValue="" key="false" length="19" name="SellEndDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value="Date the product was no longer available for sale."/>
+      </column>
+      <column comment="Date the product was discontinued." defaultValue="" key="false" length="19" name="DiscontinuedDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value="Date the product was discontinued."/>
+      </column>
+      <column comment="ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample." key="false" length="64" name="rowguid" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample."/>
+      </column>
+      <column comment="Date and time the record was last updated." defaultValue="'current_timestamp()'" key="false" length="19" name="ModifiedDate" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value="Date and time the record was last updated."/>
+      </column>
+      <additionalProperties key="Comment" value="Products sold or used in the manfacturing of sold products."/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="640">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_4" show="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;./Product.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Product" name="tFileOutputDelimited_4">
+      <column comment="Primary key for Product records." key="true" length="10" name="ProductID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value="Primary key for Product records."/>
+      </column>
+      <column comment="Name of the product." key="false" length="100" name="Name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Name of the product."/>
+      </column>
+      <column comment="Unique product identification number." key="false" length="25" name="ProductNumber" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Unique product identification number."/>
+      </column>
+      <column comment="0 = Product is purchased, 1 = Product is manufactured in-house." defaultValue="'1'" key="false" length="3" name="MakeFlag" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value="0 = Product is purchased, 1 = Product is manufactured in-house."/>
+      </column>
+      <column comment="0 = Product is not a salable item. 1 = Product is salable." defaultValue="'1'" key="false" length="3" name="FinishedGoodsFlag" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value="0 = Product is not a salable item. 1 = Product is salable."/>
+      </column>
+      <column comment="Product color." defaultValue="" key="false" length="15" name="Color" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Product color."/>
+      </column>
+      <column comment="Minimum inventory quantity. " key="false" length="5" name="SafetyStockLevel" nullable="false" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value="Minimum inventory quantity. "/>
+      </column>
+      <column comment="Inventory level that triggers a purchase order or work order. " key="false" length="5" name="ReorderPoint" nullable="false" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value="Inventory level that triggers a purchase order or work order. "/>
+      </column>
+      <column comment="Standard cost of the product." key="false" length="19" name="StandardCost" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="Standard cost of the product."/>
+      </column>
+      <column comment="Selling price." key="false" length="19" name="ListPrice" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="Selling price."/>
+      </column>
+      <column comment="Product size." defaultValue="" key="false" length="5" name="Size" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Product size."/>
+      </column>
+      <column comment="Unit of measure for Size column." defaultValue="" key="false" length="3" name="SizeUnitMeasureCode" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Unit of measure for Size column."/>
+      </column>
+      <column comment="Unit of measure for Weight column." defaultValue="" key="false" length="3" name="WeightUnitMeasureCode" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Unit of measure for Weight column."/>
+      </column>
+      <column comment="Product weight." defaultValue="" key="false" length="8" name="Weight" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="Product weight."/>
+      </column>
+      <column comment="Number of days required to manufacture the product." key="false" length="10" name="DaysToManufacture" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value="Number of days required to manufacture the product."/>
+      </column>
+      <column comment="R = Road, M = Mountain, T = Touring, S = Standard" defaultValue="" key="false" length="2" name="ProductLine" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="R = Road, M = Mountain, T = Touring, S = Standard"/>
+      </column>
+      <column comment="H = High, M = Medium, L = Low" defaultValue="" key="false" length="2" name="_Class" nullable="true" originalDbColumnName="Class" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="H = High, M = Medium, L = Low"/>
+      </column>
+      <column comment="W = Womens, M = Mens, U = Universal" defaultValue="" key="false" length="2" name="Style" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="W = Womens, M = Mens, U = Universal"/>
+      </column>
+      <column comment="Product is a member of this product subcategory. Foreign key to ProductSubCategory.ProductSubCategoryID. " defaultValue="" key="false" length="10" name="ProductSubcategoryID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value="Product is a member of this product subcategory. Foreign key to ProductSubCategory.ProductSubCategoryID. "/>
+      </column>
+      <column comment="Product is a member of this product model. Foreign key to ProductModel.ProductModelID." defaultValue="" key="false" length="10" name="ProductModelID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value="Product is a member of this product model. Foreign key to ProductModel.ProductModelID."/>
+      </column>
+      <column comment="Date the product was available for sale." key="false" length="19" name="SellStartDate" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value="Date the product was available for sale."/>
+      </column>
+      <column comment="Date the product was no longer available for sale." defaultValue="" key="false" length="19" name="SellEndDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value="Date the product was no longer available for sale."/>
+      </column>
+      <column comment="Date the product was discontinued." defaultValue="" key="false" length="19" name="DiscontinuedDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value="Date the product was discontinued."/>
+      </column>
+      <column comment="ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample." key="false" length="64" name="rowguid" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample."/>
+      </column>
+      <column comment="Date and time the record was last updated." defaultValue="'current_timestamp()'" key="false" length="19" name="ModifiedDate" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value="Date and time the record was last updated."/>
+      </column>
+      <additionalProperties key="Comment" value="Products sold or used in the manfacturing of sold products."/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tFileOutputDelimited_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tDBInput_3" offsetLabelX="0" offsetLabelY="0" source="tDBInput_3" target="tFileOutputDelimited_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tFileOutputDelimited_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tDBInput_4" offsetLabelX="0" offsetLabelY="0" source="tDBInput_4" target="tFileOutputDelimited_4">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_3" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_4" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

@@ -1,0 +1,16 @@
+[ {
+  "baseItem" : {
+    "id" : "_YphFoIwOEeynAfQwvQe0Kw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "__QV24IwNEeynAfQwvQe0Kw",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "__QV24IwNEeynAfQwvQe0Kw - SalesTerritory",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+} ]

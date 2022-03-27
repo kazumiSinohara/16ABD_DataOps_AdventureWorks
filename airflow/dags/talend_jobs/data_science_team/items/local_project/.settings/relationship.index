@@ -1,0 +1,39 @@
+[ {
+  "baseItem" : {
+    "id" : "_Mvy1QJipEeytWtYmXTTYgg",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "__QV24IwNEeynAfQwvQe0Kw",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "__QV24IwNEeynAfQwvQe0Kw - Customer",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "__QV24IwNEeynAfQwvQe0Kw - Product",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "__QV24IwNEeynAfQwvQe0Kw - SalesOrderHeaderSalesReason",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_YphFoIwOEeynAfQwvQe0Kw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "__QV24IwNEeynAfQwvQe0Kw",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "__QV24IwNEeynAfQwvQe0Kw - SalesTerritory",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+} ]
