@@ -1,5 +1,9 @@
 # 16ABD_DataOps_AdventureWorks
 
+Gerson Kazumi Sinohara 341011
+Rodrigo Jean 340501
+Thomas Saheki 341903
+
 DDL da base AdventureWorks (Maria DB)
 ![Screenshot](docs/AdventureWorks2014_ddl.png)
 
