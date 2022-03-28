@@ -3,6 +3,8 @@
 DDL da base AdventureWorks (Maria DB)
 ![Screenshot](docs/AdventureWorks2014_ddl.png)
 
+## Branches do gitFlow
+![Screenshot](docs/gitflow_branches.png)
 
 ## Talend Pipeline
 Pipeline para o time de BI com uma camada Raw e e outra de dados tratados
