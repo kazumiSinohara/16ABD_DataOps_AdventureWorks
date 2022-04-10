@@ -26,3 +26,8 @@ Execução da DAG de BI
 
 Execução da DAG de DS
 ![Screenshot](docs/ds_dag.png)
+
+Terraform no GCP
+![Screenshot](docs/terraform_composer_dag.png)
+![Screenshot](docs/terraform_dag.png)
+![Screenshot](docs/terraform_dag_succeed.png)
